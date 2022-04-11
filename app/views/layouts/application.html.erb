@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <% if technician_signed_in? %>
+      <span>Welcome, <%= current_technician.first_name %></span>
+      <%= link_to "Log out", destroy_technician_session_path, id: 'log-out' %>
+    <% else %>
+      <%= link_to "Login", new_technician_session_path, id: 'login-technician' %>
+    <% end %>
     <% if notice %><%= notice %><% end %>
     <% if alert %><%= alert %><% end %>
     <%= yield %>
