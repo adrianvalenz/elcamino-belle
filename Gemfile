@@ -61,6 +61,7 @@ group :development, :test do
   gem "faker"
   gem "capybara"
   gem "webdrivers"
+  gem "shoulda-matchers"
 end
 
 group :development do
