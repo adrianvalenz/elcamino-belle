@@ -1,7 +1,11 @@
 # README
 
-Login credentials after seeding database:
+Login credentials after seeding dev database:
 - Email: mirabel@encanto.com
+- Password: password
+
+Production:
+- Email: admin@examlple.com
 - Password: password
 
 This README would normally document whatever steps are necessary to get the
