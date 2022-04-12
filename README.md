@@ -1,11 +1,15 @@
 # README
 
+Login credentials after seeding database:
+- Email: mirabel@encanto.com
+- Password: password
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: Runs on version 3.1.0
 
 * System dependencies
 
