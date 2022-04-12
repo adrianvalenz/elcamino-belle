@@ -1,24 +1,24 @@
 require 'rails_helper'
 
 RSpec.describe Client, type: :model do
-  subject { described_class.new(
-    name: Faker::Name.name,
-    phone_number: Faker::PhoneNumber.phone_number
+  subject(:client) { described_class.new(
+    name: "Mirabel Madrigal",
+    phone_number: "555-555-5555"
   )}
 
   describe "Validations" do
     it "is valid with valid attributes" do
-      expect(subject).to be_valid
+      expect(client).to be_valid
     end
 
-    it "is not valid without a name" do
-      subject.name = nil
-      expect(subject).to_not be_valid
+    it "is invalid without a name" do
+      client.name = nil
+      expect(client).to_not be_valid
     end
 
-    it "is not valide without a phone number" do
-      subject.phone_number = nil
-      expect(subject).to_not be_valid
+    it "is invalid without a phone number" do
+      client.phone_number = nil
+      expect(client).to_not be_valid
     end
   end
 end
