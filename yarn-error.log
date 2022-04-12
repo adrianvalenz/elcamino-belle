@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/adrianvalenzuela/.nvm/versions/node/v17.1.0/bin/node /usr/local/Cellar/yarn/1.22.18/libexec/bin/yarn.js build --watch
+  /Users/adrianvalenzuela/.nvm/versions/node/v17.1.0/bin/node /usr/local/Cellar/yarn/1.22.18/libexec/bin/yarn.js install
 
 PATH: 
-  /Users/adrianvalenzuela/.rbenv/versions/3.1.0/bin:/usr/local/Cellar/rbenv/1.2.0/libexec:/usr/local/opt/libpq/bin:/usr/local/opt/ssh-copy-id/bin:/usr/local/opt/php@8.1/sbin:/usr/local/opt/php@8.1/bin:/usr/local/opt/php@7.4/sbin:/usr/local/opt/php@7.4/bin:/Users/adrianvalenzuela/.pyenv/shims:/Users/adrianvalenzuela/.rbenv/shims:/Users/adrianvalenzuela/.nvm/versions/node/v17.1.0/bin:/Users/adrianvalenzuela/.composer/vendor/bin:/usr/local/bin/php:/Applications/MacVim.app/Contents/bin/:/usr/local/Cellar/sass/1.49.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/libpq/bin:/usr/local/opt/ssh-copy-id/bin:/usr/local/opt/php@8.1/sbin:/usr/local/opt/php@8.1/bin:/usr/local/opt/php@7.4/sbin:/usr/local/opt/php@7.4/bin:/Users/adrianvalenzuela/.pyenv/shims:/Users/adrianvalenzuela/.rbenv/shims:/Users/adrianvalenzuela/.nvm/versions/node/v17.1.0/bin:/Users/adrianvalenzuela/.composer/vendor/bin:/usr/local/bin/php:/Applications/MacVim.app/Contents/bin/:/usr/local/Cellar/sass/1.49.9/bin:/Applications/kitty.app/Contents/MacOS
+  /Users/adrianvalenzuela/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/bin:/Users/adrianvalenzuela/.rbenv/versions/3.1.0/bin:/usr/local/Cellar/rbenv/1.2.0/libexec:/usr/local/opt/libpq/bin:/usr/local/opt/ssh-copy-id/bin:/usr/local/opt/php@8.1/sbin:/usr/local/opt/php@8.1/bin:/usr/local/opt/php@7.4/sbin:/usr/local/opt/php@7.4/bin:/Users/adrianvalenzuela/.pyenv/shims:/Users/adrianvalenzuela/.rbenv/shims:/Users/adrianvalenzuela/.nvm/versions/node/v17.1.0/bin:/Users/adrianvalenzuela/.composer/vendor/bin:/usr/local/bin/php:/Applications/MacVim.app/Contents/bin/:/usr/local/Cellar/sass/1.49.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/kitty.app/Contents/MacOS
 
 Yarn version: 
   1.22.18
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/adrianvalenzuela/Sites/rails/elcamino/package.json: Unexpected string in JSON at position 495
+  SyntaxError: /Users/adrianvalenzuela/Sites/rails/elcamino/package.json: Unexpected token } in JSON at position 494
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.22.18/libexec/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -35,8 +35,7 @@ npm manifest:
     },
     "scripts": {
       "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
-      "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify"
-      "heroku-postbuild": "bundle exec rails db:migrate"
+      "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify",
     }
   }
 
@@ -832,4 +831,3 @@ Lockfile:
     version "1.10.2"
     resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
     integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
-g==
